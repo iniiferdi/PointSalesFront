@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-    <div className="font-inter mx-6 xl:mx-16 bg-primary">
+    <div className="font-inter px-6 xl:px-16 bg-primary">
       <header id="main-header" className="flex justify-between items-center w-full sticky top-0 pt-6 z-50 transition-all duration-500 ease-in-out">
         <h1 className="text-white text-lg font-semibold">Ferdi
           <span className="text-second text-base font-normal">Creative and Innovative</span>
