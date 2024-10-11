@@ -85,7 +85,7 @@ function App() {
 
       <div className="bg-white w-full rounded-two mt-6 flex flex-col xl:flex-row justify-between">
         <div className="p-8 w-1/2 relative">
-          <h1 className="font-medium text-4xl">Here.stockroom</h1>
+          <h1 className="font-medium text-4xl">Here.stockroomm</h1>
           <img className="absolute bottom-0 right-0" src={segitSvg} alt="Decoration" />
         </div>
         <div className="w-1/2">
