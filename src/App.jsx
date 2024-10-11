@@ -81,9 +81,11 @@ function App() {
           <div className="flex flex-row justify-between items-center w-full px-4 absolute top-4">
             <h1 className='text-white font-medium text-lg'>Menus</h1>
             <button onClick={toggleMenu} aria-label="Close Menu" className=" text-white">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 3L3 14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M3 3L14 14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
+
             </button>
           </div>
           <ul className="text-white  font-light px-4 mt-20 text-base space-y-4">
