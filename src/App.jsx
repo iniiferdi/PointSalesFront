@@ -135,10 +135,10 @@ function App() {
           </div>
         </div>
 
-        <div className="bg-white w-full rounded-two mt-6 flex flex-col xl:flex-row justify-between">
-          <div className="p-4 xl:w-1/2 h-72 relative flex justify-center">
-            <h1 className="font-medium text-primary text-4xl">Here.stockroomm</h1>
-            <img className="absolute bottom-0 text-center xl:right-0" src={segitSvg} alt="Decoration" />
+        <div className="bg-white w-full rounded-two mt-6 flex flex-col xl:flex-row ">
+          <div className="p-4 xl:w-1/2 h-60 relative flex overflow-hidden">
+            <h1 className="font-medium text-primary text-3xl">Here.stockroomm</h1>
+            <img className="absolute bottom-0 text-center -right-20 justify-between " src={segitSvg} alt="Decoration" />
           </div>
           <div className="xl:w-1/2">
             <img src={hereSvg} alt="Here Illustration" />
