@@ -135,9 +135,18 @@ function App() {
           </div>
         </div>
 
+        <div className="flex flex-col gap-3">
+        <h1 className='text-white mt-8 font-semibold text-xl'>My Projects</h1>
+        <div className="flex flex-row gap-3 text-white">
+          <a href="">UI UX</a>
+          <a href="">Web Application</a>
+          <a href="">Desain Grafis</a>
+        </div>
+        </div>
+
         <div className="bg-white w-full rounded-two mt-6 flex flex-col xl:flex-row ">
           <div className="p-4 xl:w-1/2 h-60 relative flex overflow-hidden">
-            <h1 className="font-medium text-primary text-3xl">Here.stockroomm</h1>
+            <h1 className="font-medium text-primary text-3xl">Here.stockroom</h1>
             <img className="absolute bottom-0 text-center -right-20 justify-between " src={segitSvg} alt="Decoration" />
           </div>
           <div className="xl:w-1/2">
