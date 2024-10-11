@@ -76,14 +76,17 @@ function App() {
         <div
           id="fullscreen-menu"
           className={`fixed inset-0 bg-black bg-opacity-80 backdrop-blur-lg transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'
-            } transition-transform duration-300 ease-in-out z-50 flex justify-center items-center`}
+            } transition-transform duration-300 ease-in-out z-50 flex flex-col w-full `}
         >
-          <button onClick={toggleMenu} aria-label="Close Menu" className="absolute top-6 right-6 text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-          <ul className="text-white text-center text-2xl space-y-6">
+          <div className="flex flex-row justify-between items-center w-full px-4 absolute top-4">
+            <h1 className='text-white font-medium text-lg'>Menus</h1>
+            <button onClick={toggleMenu} aria-label="Close Menu" className=" text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <ul className="text-white  font-light px-4 mt-20 text-base space-y-4">
             <li><a href="#">Home</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Portfolio</a></li>
