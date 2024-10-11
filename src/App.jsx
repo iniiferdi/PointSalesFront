@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import heroSvg from './assets/svg/hero.svg';
 import herroSvg from './assets/svg/herro.svg';
 import iconTwSvg from './assets/svg/icontw.svg';
@@ -8,20 +9,30 @@ import segitSvg from './assets/svg/segit.svg';
 
 function App() {
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen)
+  }
+
   return (
     <>
     <div className="font-inter px-6 xl:px-16 bg-primary">
-      <header id="main-header" className="flex justify-between items-center w-full sticky top-0 pt-6 z-50 transition-all duration-500 ease-in-out">
-        <h1 className="text-white text-lg font-semibold">Ferdi
-          <span className="text-second text-base font-normal">Creative and Innovative</span>
+    <header className="flex justify-between items-center w-full sticky top-0 pt-6 z-50 transition-all duration-500 ease-in-out">
+        <h1 className="text-white text-lg font-semibold">
+          Ferdi
+          <span className="text-second text-base font-normal"> Creative and Innovative</span>
         </h1>
-        <ul id="nav-menu" className="hidden xl:flex flex-row gap-4 items-center text-second text-base font-light  bg-white xl:bg-transparent absolute xl:static right-0 top-14 rounded-md">
+        <ul
+          id="nav-menu"
+          className="hidden xl:flex flex-row gap-4 items-center text-second text-base font-light  bg-white xl:bg-transparent absolute xl:static right-0 top-14 rounded-md"
+        >
           <li><a href="#">Home</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">Portfolio</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-        <button className="xl:hidden" id="menu-toggle" aria-label="Menu">
+        <button className="xl:hidden" onClick={toggleMenu} aria-label="Menu">
           <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M5 7H19" stroke="white" strokeWidth="2.5" strokeLinecap="round" />
             <path d="M5 12H19" stroke="white" strokeWidth="2.5" strokeLinecap="round" />
@@ -30,8 +41,13 @@ function App() {
         </button>
       </header>
 
-      <div id="fullscreen-menu" className="fixed inset-0 bg-black bg-opacity-80 backdrop-blur-lg transform translate-x-full transition-transform duration-300 ease-in-out z-50 flex justify-center items-center">
-        <button id="close-menu" aria-label="Close Menu" className="absolute top-6 right-6 text-white">
+      <div
+        id="fullscreen-menu"
+        className={`fixed inset-0 bg-black bg-opacity-80 backdrop-blur-lg transform ${
+          isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        } transition-transform duration-300 ease-in-out z-50 flex justify-center items-center`}
+      >
+        <button onClick={toggleMenu} aria-label="Close Menu" className="absolute top-6 right-6 text-white">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
             <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
           </svg>
@@ -43,6 +59,7 @@ function App() {
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
+
 
       <div className="flex flex-col xl:flex-row gap-6 mt-8">
         <div className="relative bg-gradient-to-br from-[#2e2e2e] to-[#0a0a0a] xl:w-3/5 w-full rounded-one p-6 text-white shadow-2xl">
@@ -92,6 +109,8 @@ function App() {
         </div>
       </div>
       </div>
+
+      
     </>
   );
 }
