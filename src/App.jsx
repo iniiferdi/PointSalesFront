@@ -51,7 +51,7 @@ function App() {
       >
         <h1 className="text-white text-lg font-semibold">
           Ferdi
-          <span className="text-second text-base font-normal"> Creative and Innovative</span>
+          <span className="text-second text-base font-normal">  Creative and Innovative</span>
         </h1>
         <ul
           id="nav-menu"
@@ -125,7 +125,7 @@ function App() {
               </div>
               <div className="flex flex-col gap-4 mt-4">
                 <h3 className="text-5xl xl:text-6xl font-medium mb-2">Passionate to pursue technology</h3>
-                <p className="text-base font-light text-text">Hi! I'm a web developer and designer focused on innovation and user experience. Through creativity and technology, I turn ideas into functional and aesthetic digital solutions. Welcome, and explore my work.</p>
+                <p className="text-base font-normal text-text">Hi! I'm a web developer and designer focused on innovation and user experience. Through creativity and technology, I turn ideas into functional and aesthetic digital solutions. Welcome, and explore my work.</p>
               </div>
             </div>
           </div>
@@ -136,11 +136,11 @@ function App() {
         </div>
 
         <div className="bg-white w-full rounded-two mt-6 flex flex-col xl:flex-row justify-between">
-          <div className="p-8 w-1/2 relative">
-            <h1 className="font-medium text-4xl">Here.stockroomm</h1>
-            <img className="absolute bottom-0 right-0" src={segitSvg} alt="Decoration" />
+          <div className="p-4 xl:w-1/2 h-72 relative flex justify-center">
+            <h1 className="font-medium text-primary text-4xl">Here.stockroomm</h1>
+            <img className="absolute bottom-0 text-center xl:right-0" src={segitSvg} alt="Decoration" />
           </div>
-          <div className="w-1/2">
+          <div className="xl:w-1/2">
             <img src={hereSvg} alt="Here Illustration" />
           </div>
         </div>
