@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-    <div className="font-inter px-6 xl:px-16 bg-primary">
+    <div className="font-inter px-4 xl:px-16 bg-primary">
     <header className="flex justify-between items-center w-full sticky top-0 pt-6 z-50 transition-all duration-500 ease-in-out">
         <h1 className="text-white text-lg font-semibold">
           Ferdi
@@ -88,7 +88,7 @@ function App() {
               </div>
             </div>
             <div className="flex flex-col gap-4 mt-4">
-              <h3 className="text-[32px] xl:text-6xl font-medium mb-2">Passionate to pursue technology</h3>
+              <h3 className="text-5xl xl:text-6xl font-medium mb-2">Passionate to pursue technology</h3>
               <p className="text-base font-light text-text">Hi! I'm a web developer and designer focused on innovation and user experience. Through creativity and technology, I turn ideas into functional and aesthetic digital solutions. Welcome, and explore my work.</p>
             </div>
           </div>
