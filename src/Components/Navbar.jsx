@@ -39,11 +39,11 @@ function Navbar() {
       >
         <h1 className="text-white text-lg font-semibold">
           Ferdi
-          <span className="text-second text-base font-normal">  Creative and Innovative</span>
+          <span className="text-second text-base font-medium">   Creative and Innovative</span>
         </h1>
         <ul
           id="nav-menu"
-          className="hidden xl:flex flex-row gap-4 items-center text-second text-base font-light  absolute xl:static right-0 top-14 rounded-md"
+          className="hidden xl:flex flex-row gap-4 items-center text-second text-base font-medium  absolute xl:static right-0 top-14 rounded-md"
         >
           <li><a href="#">Home</a></li>
           <li><a href="#">Services</a></li>
